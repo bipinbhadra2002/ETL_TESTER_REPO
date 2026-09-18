@@ -1,1 +1,21 @@
 
+=> if I add a new file then it shows as untracked
+=> if I modify an existing file then it shows modified
+
+This three step we are follow to load the in our local 
+whenever we make changes (unstaged)-> stage-> commit
+
+
+1. make changes to existing files / add new files (unstaged)
+2. we have to stage the changes (so that they are to be committed)
+3. we can commit all the staged changes
+git add .
+git status
+git commit-m "making changes to readme and adding a new transformations file"    ---> normal git commit also work
+1. I modified readme file and created a new transformation file
+2. git add .  ,,, and another git add <write file name > , also write more file name 
+3. git commit-m "meaningful message"
+our local (laptop) is ahead of remote (github) by 1 commit.
+git push origin main 
+(in this cases we are saying to git hay git push our code from local to github.
+git say tell me your origin name means locatrin and your branch also)
